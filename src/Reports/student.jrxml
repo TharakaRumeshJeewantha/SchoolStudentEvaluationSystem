@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e823928-3b5a-4d65-9ca6-a45ad0a7d129">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="416"/>
+	<parameter name="p_index" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_scl_name" class="java.lang.String"/>
+	<parameter name="p_scl_address" class="java.lang.String"/>
+	<parameter name="p_teacher" class="java.lang.String"/>
+	<parameter name="p_subject" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select *
+from student_all
+where st_fname=$P{p_index}]]>
+	</queryString>
+	<field name="st_fname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_mname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_lname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_fullname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_grade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_se_1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_se_2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_se_3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_se_marks1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_se_marks2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_se_marks3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_name1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_name2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_name3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_name4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_name5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_name6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_marks1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_marks2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_marks3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_marks4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_marks5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_marks6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_desc1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_desc2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_desc3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_desc4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_desc5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="st_as_desc6" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="v_assess_Tot" class="java.math.BigDecimal" resetType="Group" resetGroup="Grp_index" calculation="Sum">
+		<variableExpression><![CDATA[$F{st_as_marks1}+$F{st_as_marks2}+$F{st_as_marks3}+$F{st_as_marks4}+$F{st_as_marks5}+$F{st_as_marks6}]]></variableExpression>
+	</variable>
+	<variable name="v_term_tot" class="java.math.BigDecimal" resetType="Group" resetGroup="Grp_index" calculation="Sum">
+		<variableExpression><![CDATA[$F{st_se_marks1}+$F{st_se_marks2}+$F{st_se_marks3}]]></variableExpression>
+	</variable>
+	<group name="Grp_index">
+		<groupExpression><![CDATA[$F{st_fname}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="196" splitType="Stretch">
+			<staticText>
+				<reportElement x="350" y="125" width="83" height="20" uuid="7c3cd2da-48af-42d2-b2d0-ee8fcdcbd936"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Teacher Name    :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="10" width="555" height="1" uuid="b93c03a6-8388-4f64-ae41-4dd88c81c3d5"/>
+			</line>
+			<line>
+				<reportElement x="0" y="191" width="555" height="1" uuid="5c151449-c27b-4cf0-bf46-18636410a01f"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="66" width="555" height="20" uuid="e955117a-6537-422e-a453-99d8d778dda8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INDIVIDUAL STUDENT EVALUATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="165" width="26" height="20" uuid="26909b37-41f7-42e3-84ca-dcc77388b0f2"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Grade  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="165" width="39" height="20" uuid="fc8ef1ea-c3f6-45d1-8baa-3d5a1ea8d5cd"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Class  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="145" width="83" height="20" uuid="862375b7-43ba-4a08-8b19-af6d60c91eff"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Subject             :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="433" y="145" width="100" height="20" uuid="1888cc75-07b7-4ead-8004-e676a7f28757"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_subject}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="112" width="555" height="1" uuid="fb6f7ff6-270e-4d32-a17f-86e07be057c4"/>
+			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="86" width="555" height="20" uuid="bda6667e-6a7d-4778-8b3c-e802e497c64d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="18" width="555" height="28" uuid="b612da09-1586-449c-be65-19ac3783cd0a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_scl_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="433" y="125" width="100" height="20" uuid="1bdf7291-af37-41c8-b3aa-e107f27a04af"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_teacher}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="46" width="555" height="20" uuid="c156a582-06af-475f-a21c-7504e89168b0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_scl_address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="125" width="73" height="20" uuid="aeb019ff-671a-4ee4-8f6e-4e143c30bda7"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Index No          :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="145" width="73" height="20" uuid="0b3693c1-30b8-43ac-b181-7432f94ffe95"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Student Name   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="165" width="73" height="20" uuid="a15424f0-feee-4dfe-8241-7902cf2aef9d"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Gender             :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="87" y="125" width="100" height="20" uuid="cbe3350b-627c-4876-a40c-01495cb0cb32"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="145" width="171" height="20" uuid="c29f223a-671d-48f9-acdf-0e92e48824a6"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_fullname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="165" width="100" height="20" uuid="02e3d170-fc2c-487a-a77b-242d387e572a"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="165" width="61" height="20" uuid="e8b0d652-fd54-4f0a-9d9d-0c55c9a57f20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="165" width="57" height="20" uuid="d3bf2668-28d7-48b3-8c9e-ad17d7cdb72a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_class}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="323" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="9" width="139" height="20" uuid="2da05ab5-c572-4318-a40d-3c179153fa0b"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assessment Marks Records]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="42" width="64" height="20" uuid="e177750f-f7c1-42bb-b3df-1748d327a9e7"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assess. No ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="42" width="136" height="20" uuid="8fdc3da2-9b0b-4ece-868e-6f3db632df65"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assessment Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="42" width="48" height="20" uuid="a21cb241-2dff-4e66-aed6-ff8d66676b69"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marks]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="62" width="64" height="20" uuid="6ab97079-2356-4490-9b5d-49a491a39248"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="82" width="64" height="20" uuid="1334e259-487f-45b8-b896-0efb819e1141"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="102" width="64" height="20" uuid="fb9db1b2-0de5-4eb9-a1e8-151166943a2d"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="122" width="64" height="20" uuid="f69f7b3a-4cd4-4173-8a12-8de1cde99c0c"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="142" width="64" height="20" uuid="574e61bf-7d90-40e6-81b3-de5a7366d016"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="162" width="64" height="20" uuid="ab73fdaa-be7d-4713-b0e0-55e7169338f3"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="62" width="136" height="20" uuid="5cf589b9-9e25-4efc-b108-02e3eec663bb"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_name1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="82" width="136" height="20" uuid="39194e31-123c-4a5e-9680-0c9ea1f6cb45"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_name2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="102" width="136" height="20" uuid="0779d45c-6fe5-47e3-989b-b06f7417b411"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_name3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="122" width="136" height="20" uuid="0af69ab0-f346-4cf7-b157-fe9a0a873038"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_name4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="142" width="136" height="20" uuid="5c35eece-13ec-40c5-ab46-c68b3f1707fe"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_name5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="162" width="136" height="20" uuid="77b2d81a-efcb-4973-81e3-9bfc0be33436"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_name6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="62" width="48" height="20" uuid="696abcd5-1b2d-414b-a0fa-3936d58a76aa"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_marks1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="82" width="48" height="20" uuid="f080b1f3-1245-4a88-b3f5-5cba631a0aec"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_marks2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="102" width="48" height="20" uuid="20da81b5-cec4-43a0-a7bc-c59d5ae179ad"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_marks3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="122" width="48" height="20" uuid="e183f8b5-eee9-4058-bcd5-4a1b0ed75c3a"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_marks4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="142" width="48" height="20" uuid="1fdeb9e6-fdd7-4d81-ac80-23223cb957cb"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_marks5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="162" width="48" height="20" uuid="d7d39fa0-863b-43f8-929e-94b1d9f8e15e"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_as_marks6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="336" y="162" width="146" height="20" uuid="1ec3db9c-b953-426b-861e-5fc17e279b47"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Total Assessment Marks]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="482" y="162" width="57" height="20" forecolor="#990000" uuid="e1ee9da1-321c-4df9-83c5-133a78f221a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{v_assess_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="202" width="139" height="20" uuid="b80128ad-aaf8-426a-8813-55194991dfa4"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Term Test Marks Records]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="39" y="255" width="113" height="20" uuid="c86defae-c919-4f8a-bad3-90c03efe183e"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_se_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="275" width="113" height="20" uuid="c96e17cd-61ac-47c3-8b8a-36ee0ec44b14"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_se_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="295" width="113" height="20" uuid="f8e31c2b-a089-4163-9556-a0abcc2aeadf"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_se_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="255" width="66" height="20" uuid="c4736517-4502-4d9a-b029-09fba0431585"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_se_marks1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="275" width="66" height="20" uuid="662f72ec-bbd9-4547-a182-fcc4b5c937c1"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_se_marks2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="295" width="66" height="20" uuid="1577e228-7037-4563-ab47-ca875e33e121"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_se_marks3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="39" y="235" width="113" height="20" uuid="f3df248b-78e3-4812-a335-9a0746744135"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Term Test No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="235" width="65" height="20" uuid="5e3d712c-ee64-4df1-940a-5723c990a78a"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="295" width="146" height="20" uuid="cd92e59c-4f7d-4240-a86e-ef85821585bf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Total Term Test Marks ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="482" y="295" width="57" height="20" forecolor="#990000" uuid="a69c2dc8-84d2-42ea-82a2-5fbc03ac9928"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{v_term_tot}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="266" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="10" width="203" height="20" uuid="11d81361-a49b-4511-bf67-1ad8d9832a09"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Records with Graph Evaluation]]></text>
+			</staticText>
+			<barChart>
+				<chart>
+					<reportElement x="14" y="41" width="525" height="225" uuid="db10b1a4-684f-4331-8d7e-35a4a84ca4a2"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Assess. 01"]]></seriesExpression>
+						<categoryExpression><![CDATA["A 01"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_as_marks1}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Assess. 02"]]></seriesExpression>
+						<categoryExpression><![CDATA["A 02"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_as_marks2}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Assess. 03"]]></seriesExpression>
+						<categoryExpression><![CDATA["A 03"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_as_marks3}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Assess. 04"]]></seriesExpression>
+						<categoryExpression><![CDATA["A 04"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_as_marks4}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Assess. 05"]]></seriesExpression>
+						<categoryExpression><![CDATA["A 05"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_as_marks5}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Assess. 06"]]></seriesExpression>
+						<categoryExpression><![CDATA["A 06"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_as_marks6}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Term 01"]]></seriesExpression>
+						<categoryExpression><![CDATA["T 01"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_se_marks1}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Term 02"]]></seriesExpression>
+						<categoryExpression><![CDATA["T 02"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_se_marks2}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Term 03"]]></seriesExpression>
+						<categoryExpression><![CDATA["T 03"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{st_se_marks3}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</summary>
+</jasperReport>
